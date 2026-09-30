@@ -10,8 +10,6 @@ The objective is to prepare the research abstract dataset for the development
 of a machine learning approach that classifies research documents based on
 their text.
 
-───
-
 2. Dataset
 
 2.1 Dataset Structure
@@ -46,7 +44,6 @@ The original dataset contains two target classes:
 The target distribution shows that the dataset contains more classical
 observations than ai observations.
 
-───
 
 3. Data Preprocessing
 
@@ -104,7 +101,6 @@ Validation results:
 The cleaned abstracts and their corresponding labels were retained for the
 feature engineering stage.
 
-───
 
 4. Feature Engineering
 
@@ -133,13 +129,11 @@ representation technique.
 
 Implementation and results will be documented after completion.
 
-───
 
 5. Baseline Model
 
 To be documented after implementation.
 
-───
 
 6. Baseline Model Evaluation
 
