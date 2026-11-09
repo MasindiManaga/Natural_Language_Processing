@@ -11,7 +11,7 @@
 
 ## Project Overview
 
-This repository contains the implementation and documentation for Natural Language Processing with Python Project 1. The project demonstrates the application of Python programming, text processing, text modelling, text summarisation and analysis, text classification, and basic analytics deployment.
+This repository contains the implementation and documentation for Natural Language Processing with Python Project 2. The project demonstrates the application of Python programming, text processing, text modelling, text summarisation and analysis, text classification, and basic analytics deployment.
 
 ## Project Components
 
