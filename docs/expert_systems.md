@@ -1,14 +1,10 @@
-Expert System
+# Expert System
 
 1. Overview
 
-This section covers data loading, data exploration, preprocessing and text
-denoising, feature engineering, baseline modelling, and baseline model
-evaluation for the Research Papers – Expert System.
+This section covers data loading, data exploration, preprocessing and text denoising, feature engineering, baseline modelling, and baseline model evaluation for the Research Papers – Expert System.
 
-The objective is to prepare the research abstract dataset for the development
-of a machine learning approach that classifies research documents based on
-their text.
+The objective is to prepare the research abstract dataset for the development of a machine learning approach that classifies research documents based on their text.
 
 2. Dataset
 
@@ -43,7 +39,6 @@ The original dataset contains two target classes:
 
 The target distribution shows that the dataset contains more classical
 observations than ai observations.
-
 
 3. Data Preprocessing
 
@@ -101,7 +96,6 @@ Validation results:
 The cleaned abstracts and their corresponding labels were retained for the
 feature engineering stage.
 
-
 4. Feature Engineering
 
 4.1 Input and Target Features
@@ -120,21 +114,42 @@ corresponding classification label.
 
 4.2 Feature Representation
 
-To be documented after implementation.
+Term Frequency–Inverse Document Frequency (TF-IDF) was used to convert the cleaned research abstracts into numerical feature representations suitable for machine learning.
+
+TF-IDF represents documents based on the importance of terms within each document relative to their occurrence across the dataset.
+
+The vectoriser was fitted using the training data only to prevent information from the test dataset influencing the feature representation.
 
 4.3 BERT Embeddings
 
-BERT embeddings have been identified for investigation as a feature
-representation technique.
+BERT embeddings were explored as an alternative approach to representing research abstracts.
 
-Implementation and results will be documented after completion.
+Unlike TF-IDF, BERT uses contextual representations that can capture relationships between words based on their surrounding text.
 
+The final baseline and classification experiments used TF-IDF. BERT was not included in the final model comparison.
 
 5. Baseline Model
 
-To be documented after implementation.
+A baseline classification model was developed to establish an initial performance benchmark for the research abstract classification task.
 
+The dataset was divided into training and testing subsets using a stratified 80/20 split to preserve the distribution of the two target classes.
+
+A majority-class dummy classifier was used as the baseline. This classifier predicts the most frequently occurring target class without learning patterns from the research abstracts.
+
+The baseline provides a reference for evaluating whether subsequent machine learning models improve classification performance.
 
 6. Baseline Model Evaluation
 
-To be documented after implementation.
+The baseline classifier was evaluated using the held-out test dataset.
+
+The evaluation considered accuracy and macro-averaged F1-score.
+
+Baseline results:
+
+- Accuracy: 79.1%
+
+- Macro F1-score: 0.442
+
+The baseline accuracy reflects the imbalance between the two target classes, with classical abstracts representing the majority of observations.
+
+The macro F1-score provides a more balanced assessment by giving equal weight to both classes.
