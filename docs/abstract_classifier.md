@@ -14,7 +14,7 @@ The `cleaned_research_abstracts.csv` dataset was loaded from the `data/processed
 
 The dataset was prepared during the preprocessing stage documented in the Expert System.
 
-Observations after preprocessing: 1,125
+Observations after preprocessing: 1,123
 
 Input:
 
@@ -92,10 +92,10 @@ Previously recorded test results:
 
 | Model | Accuracy |
 |---|---:|
-| Multinomial Naive Bayes | 80.4% |
+| Multinomial Naive Bayes | 80.9% |
 | Logistic Regression | 90.7% |
-| LinearSVC | 92.4% |
-| Random Forest | 91.6% |
+| LinearSVC | 92.0% |
+| Random Forest | 91.1% |
 
 LinearSVC achieved the highest accuracy among the four models.
 
