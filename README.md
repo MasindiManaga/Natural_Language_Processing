@@ -11,7 +11,7 @@
 
 ## Project Overview
 
-This repository contains the implementation and documentation for Natural Language Processing with Python Project 2. TThe project covers research abstract classification, machine learning model comparison, research document mining, topic modelling and an interactive visualisation.
+This repository contains the implementation and documentation for Natural Language Processing with Python Project 1. TThe project covers research abstract classification, machine learning model comparison, research document mining, topic modelling and an interactive visualisation.
 
 ## Project Components
 
