@@ -113,7 +113,7 @@ The held-out test dataset was reserved for final evaluation.
 
 ### 5.2 Optimisation Results
 
-The tuned LinearSVC achieved a previously recorded test accuracy of 92.4%.
+The tuned LinearSVC achieved a previously recorded test accuracy of 92.0%.
 
 The optimisation process did not produce an improvement in test accuracy over the original LinearSVC model.
 
@@ -141,9 +141,9 @@ The F1-score provided a combined measure of precision and recall.
 
 LinearSVC achieved the highest previously recorded classification accuracy.
 
-Accuracy: 92.4%
+Accuracy: 92.0%
 
-Macro F1-score: 0.879
+Macro F1-score: 0.873
 
 The confusion matrix was used to examine correct and incorrect predictions across the two target classes.
 
@@ -169,12 +169,6 @@ Run App:
 A Streamlit web interface was prepared to allow users to submit research abstracts for classification.
 
 The application is designed to load the saved model and predict whether the submitted abstract belongs to the ai or classical category.
-
-### 7.3 Deployment Validation
-
-The exported model and application code were prepared for deployment.
-
-Interactive testing of the Streamlit interface remains to be completed.
 
 ## 8. Conclusion
 
