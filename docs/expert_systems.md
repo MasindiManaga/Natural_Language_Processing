@@ -16,25 +16,37 @@ DataFrame for exploration and preprocessing.
 Initial observations: 1,138
 
 Original columns:
+
 • DOI
+
 • Abstract
+
 • Label
+
 
 Input:
+
 • Abstract
 
+
 Target:
+
 • Label
 
+
 Target classes:
+
 • ai
+
 • classical
+
 
 2.2 Target Distribution
 
 The original dataset contains two target classes:
 
 • classical: 900
+
 • ai: 238
 
 The target distribution shows that the dataset contains more classical
@@ -104,9 +116,11 @@ The cleaned research abstracts were selected as the model input, while the
 document category was selected as the target variable.
 
 Input (X):
+
 • Clean_Abstract
 
 Target (y):
+
 • Label
 
 Therefore, each observation consists of a cleaned research abstract and its
@@ -133,10 +147,6 @@ The final baseline and classification experiments used TF-IDF. BERT was not incl
 A baseline classification model was developed to establish an initial performance benchmark for the research abstract classification task.
 
 The dataset was divided into training and testing subsets using a stratified 80/20 split to preserve the distribution of the two target classes.
-
-A majority-class dummy classifier was used as the baseline. This classifier predicts the most frequently occurring target class without learning patterns from the research abstracts.
-
-The baseline provides a reference for evaluating whether subsequent machine learning models improve classification performance.
 
 6. Baseline Model Evaluation
 
