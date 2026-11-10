@@ -1,4 +1,4 @@
-# Natural Language Processing with Python – Project 1
+# Natural Language Processing with Python: Project 1
 
 ## Project Information
 
