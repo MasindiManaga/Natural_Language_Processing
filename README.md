@@ -43,11 +43,15 @@ Documents the entire project, covering Questions 1 through 4, including project 
 
 Install the required dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-Launch the Streamlit application:
+```bash
+# Launch the Streamlit application:
 
 python -m streamlit run deployment/app.py
+```
 
 ## Technologies
 
@@ -61,7 +65,7 @@ Each assessment question has a dedicated notebook.
 
 ## Data Sources
 
-The research abstracts and research corpus files used in Question 1  to Question 3 were supplied as part of the assessment.
+The research abstracts and research corpus files used in Question 1  to Question 4 were supplied as part of the assessment.
 
 ## Academic Integrity
 
