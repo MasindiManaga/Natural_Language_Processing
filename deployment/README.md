@@ -71,27 +71,6 @@ python -m streamlit run deployment/app.py
 
 If the text area is empty, the application displays a warning instead of making a prediction.
 
-## Deploy with Streamlit Community Cloud
-
-1. Push the repository to GitHub. Ensure that deployment/app.py, deployment/research_classifier.joblib, and the required dependency file are committed. Do not commit .venv/.
-2. Open Streamlit Community Cloud and sign in with GitHub.
-3. Choose Create app and select the repository and branch.
-4. Set the main file path to deployment/app.py.
-5. Ensure the dependency file used by the deployment pins scikit-learn==1.7.2. The root requirements.txt is the simplest default location to configure for Streamlit Cloud.
-6. Deploy the app then enter a non-empty sample abstract and confirm that a prediction appears.
-
-A successful cloud deployment should display the Researchly Research Abstract Classifier title, a text entry area, and a Classify Abstract button.
-
-## Troubleshooting
-
-| Problem | Check |
-| --- | --- |
-| `Model file not found` | Keep `research_classifier.joblib` in the same folder as `app.py` and commit it to GitHub. |
-| `ModuleNotFoundError` | Install the missing package in the active environment and include it in deployment dependencies. |
-| scikit-learn version warning | Use `scikit-learn==1.7.2`, the version used to save this model. |
-| App does not launch | Run `python -m streamlit run deployment/app.py` from the repository root and inspect the terminal error. |
-| Empty input | Enter an abstract before selecting **Classify Abstract**. |
-
 ## Assessment context
 
 This deployment supports Question 2.3; web interface for the selected classification configuration and the deployment documentation required by Question 4.3. The modelling and evaluation steps are available in notebooks/01_expert_system.ipynb and notebooks/02_abstract_classifier.ipynb, with further explanation in docs/.
