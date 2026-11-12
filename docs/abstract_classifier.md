@@ -164,6 +164,8 @@ The saved pipeline contains the components required to transform cleaned researc
 Run App:
 `python -m streamlit run deployment/app.py`
 
+Or use deplyment link: https://naturallanguageprocessing-hzgke6vvsslq2nv3ux5fid.streamlit.app/
+
 ### 7.2 Web Interface
 
 A Streamlit web interface was prepared to allow users to submit research abstracts for classification.
